@@ -24,7 +24,7 @@ ul {
     list-style: none;
     padding: 0;
     margin: 0;
-    
+
 }
 
 button,
@@ -62,9 +62,10 @@ nav li a {
     font-size: 1em;
     font-weight: bold;
     color: var (--color-active);
-    
+
 }
-nav li.current-page a{
+
+nav li.current-page a {
 
     color: var (--color-theme);
     background-color: var (--color-active);
@@ -137,7 +138,4 @@ main p {
         padding-top: 20px;
         padding-bottom: 20px;
     }
-}
-.fa-solidfa-cloud-sun-rain{
-
 }
