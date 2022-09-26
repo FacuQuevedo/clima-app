@@ -31,7 +31,10 @@ button,
 a {
     user-select: none;
     -webkit-user-select: none;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
 }
+
 
 header {
     position: fixed;
@@ -61,15 +64,17 @@ nav li a {
     text-decoration: none;
     font-size: 1em;
     font-weight: bold;
-    color: var (--color-active);
+    color: var(--color-active);
+    
 
 }
 
 nav li.current-page a {
 
-    color: var (--color-theme);
-    background-color: var (--color-active);
+    color: var(--color-theme);
+    background-color: var(--color-active);
     pointer-events: none;
+    border-radius: 10px;
 }
 
 main {
@@ -93,13 +98,13 @@ h1>img {
 }
 
 h2 {
-    color: var (--color-theme);
+    color: var(--color-theme);
     margin: 16px 0;
     text-align: center;
 }
 
 h3 {
-    color: var (--color-theme);
+    color: var(--color-theme);
     margin: 8px 0;
 }
 
@@ -111,7 +116,7 @@ main section {
 footer {
     position: fixed;
     bottom: 0px;
-    background: var (--color-theme);
+    background: var(--color-theme);
     width: 100%;
     text-align: center;
     padding-top: 10px;
@@ -139,3 +144,7 @@ main p {
         padding-bottom: 20px;
     }
 }
+
+
+
+
