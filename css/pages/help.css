@@ -1,144 +1,39 @@
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+@import url(common.css);
 
-}
-
-:root {
-    /* Declaro variables CSS con colores principales */
-    --color-theme: #00594c;
-    --color-active: #5df2d6;
-    --color-back-active: #04957d;
-    --color-gradient: linear-gradient(to right, var(--color-theme),
-            var(--color-back-active));
-}
-
-body {
-    height: 100%;
-    width: 100%;
-}
-
-ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    
-}
-
-button,
-a {
-    user-select: none;
-    -webkit-user-select: none;
-}
-
-header {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background: var(--color-theme);
-    border-bottom-left-radius: 15px;
-    border-bottom-right-radius: 15px;
-}
-
-
-nav>ul {
+.botones {
     display: flex;
-    justify-content: space-between;
-    justify-content: center;
-    display: flex;
-    flex-direction: row
+    justify-content: space-evenly;
+    align-items: center;
 }
 
-nav li {
-    display: flex;
-    flex-direction: row
-}
-
-
-nav li a {
-    display: block;
-    padding: 16px 12px;
-    text-align: center;
-    text-decoration: none;
-    font-size: 1em;
+.botones button{
+    background-color:#00594c;
     font-weight: bold;
-    color: var(--color-active);
-    
-}
-nav li.current-page a{
-
-    color: var(--color-theme);
-    background-color: var(--color-active);
-    pointer-events: none;
-    border-radius: 10px;
+    color: #fff;
+    border-radius: 7px;
+    padding: 6px;
+    margin-bottom: 15px;
 }
 
-main {
-    margin-top: 120px;
-    overflow: auto;
-    padding: 16px;
-    padding-bottom: 60px;
-    height: calc (100% - 120px);
+input{
+    border-radius: 5px;
 }
 
-h1 {
-    text-align: center;
-    margin:
-        0;
-    color: white;
+label{
+    border-radius: 7px;
+    margin-bottom: 5px;
 }
 
-h1>img {
-    width: 70px;
-    vertical-align: middle;
-}
-
-h2 {
-    color: var(--color-theme);
-    margin: 16px 0;
-    text-align: center;
-}
-
-h3 {
-    color: var(--color-theme);
-    margin: 8px 0;
-}
-
-main section {
+.alerta p {
     display: flex;
-    justify-content: space-around;
-}
-
-footer {
-    position: fixed;
-    bottom: 0px;
-    background: var(--color-theme);
-    width: 100%;
+    justify-content: center;
     text-align: center;
+    align-items: center;
+    background-color: #dc3545;
+    border-radius: 15px;
+    border: 2cm;
+    width: 40%;
+    color:white;
     padding-top: 10px;
     padding-bottom: 10px;
-}
-
-footer p {
-    font-size: small;
-    color: white;
-}
-
-main p {
-    margin-bottom: 16px;
-}
-
-/* Media Query: Estilos a aplicar sólo en pantallas mayores a 400px */
-@media (min-width: 400px) {
-    main {
-        padding-left: 10%;
-        padding-right: 10%;
-    }
-
-    footer {
-        padding-top: 20px;
-        padding-bottom: 20px;
-    }
 }

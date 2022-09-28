@@ -20,7 +20,7 @@
         </h1>
         <nav>
             <ul>
-                <li ><a href="index.html">Clima</a></li>
+                <li><a href="index.html">Clima</a></li>
                 <li class="current-page"><a href="#">Agregar Ciudad</a></li>
                 <li><a href="help.html">Ayuda</a></li>
             </ul>
@@ -28,24 +28,32 @@
     </header>
     <!-- Contenido principal de la página -->
     <main>
-        <h2>Agregar Ciudad</h2>
-        <section class="formulario">
-            <form action="">
-                <table>
-                    <tr>
-                        <td>
+        <div>
+            <section class="formulario">
+                <h2>Agregar Ciudad</h2>
+                <form action="">
+                    <table>
+
+                        <tr>
                             <label for="agregarCiudad">Ingrese la ciudad a agregar:</label>
-                            <input type="text" id="agregarCiudad" name="agregarCiudad">
+                            <td>
+                                <input type="text" id="agregarCiudad" name="agregarCiudad">
+                            </td>
+                        </tr>
+                        <td>
+                            <input type="submit" value="Agregar" id="agrega">
                         </td>
-                    </tr>
-                    <td>
-                        <input type="submit" value="Agregar" id="agregar">
-                    </td>
-                    <tr>
-                    </tr>
-                </table>
-            </form>
-        </section>
+                        <tr>
+                        </tr>
+
+                    </table>
+                </form>
+            <p class="item">Ciudad agregada con exito</p>
+            <p class="item">Error: La ciudad ingreseda no se encuentra en la API o se produjo un error al consultar</p>
+            <p class="item">La ciudad agregada ya se encuentra almacenada</p>
+            </section>
+        
+        </div>
     </main>
     <footer>
         <p>

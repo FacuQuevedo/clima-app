@@ -4,11 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/icon.ico">
+    <script src="https://kit.fontawesome.com/e0acc323b6.js" crossorigin="anonymous"></script>
     <title>Clima App</title>
     <!-- Estilos CSS -->
     <link rel="stylesheet" href="css/pages/help.css">
-    <link rel="icon" href="images/icon.ico">
-    <script src="https://kit.fontawesome.com/e0acc323b6.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -20,10 +20,9 @@
         </h1>
         <nav>
             <ul>
-                <li ><a href="index.html">Clima</a></li>
+                <li><a href="index.html">Clima</a></li>
                 <li><a href="add-city.html">Agregar Ciudad</a></li>
                 <li class="current-page"><a href="#">Ayuda</a></li>
-
             </ul>
         </nav>
     </header>
@@ -34,11 +33,9 @@
             API de<a href="https://openweathermap.org/api”" target="_blank">OpenWeatherMap</a>.
         </p>
         <p>
-            Para poder consultar el clima, primero deberá <a
-                href="add-city.html">Agregar una ciudad</a> y
+            Para poder consultar el clima, primero deberá <a href="add-city.html">Agregar una ciudad</a> y
             luego
-            seleccionar la Ciudad en cuestión desde la página <a
-                href="index.html">Clima</a>.
+            seleccionar la Ciudad en cuestión desde la página <a href="index.html">Clima</a>.
         </p>
         <section>
             <form action="">
@@ -47,6 +44,9 @@
                         <td>
                             <label for="Nombre">Nombre:</label>
                         </td>
+
+                    </tr>
+                    <tr>
                         <td>
                             <input type="text" id="Nombre" name="Nombre">
                         </td>
@@ -55,6 +55,9 @@
                         <td>
                             <label for="Email">Email:</label>
                         </td>
+                        
+                    </tr>
+                    <tr>
                         <td>
                             <input type="email" id="Email" name="Email">
                         </td>
@@ -63,11 +66,14 @@
                         <td>
                             <label for="Mensaje">Mensaje:</label>
                         </td>
-                        <td>
-                            <textarea name="Mensaje" id="Mensaje" cols="35" rows="10"></textarea>
-                        </td>
+                        
                     </tr>
                     <tr>
+                        <td>
+                            <textarea name="Mensaje" id="Mensaje" cols="30" rows="10"></textarea>
+                        </td>
+                    </tr>
+                    <tr class="botones">
                         <td>
                             <button type="reset">Limpiar</button>
                         </td>
@@ -78,6 +84,10 @@
                 </table>
             </form>
         </section>
+        <section class="alerta">
+            <p>ingrese un Email valido</p>
+        </section>
+        
     </main>
     <footer>
         <p>
