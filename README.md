@@ -1,3 +1,3 @@
-# tup-lc2-clima-app-grupo2
+# clima-app
 
 
